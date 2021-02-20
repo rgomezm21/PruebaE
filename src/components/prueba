@@ -1,0 +1,73 @@
+ {/* <TableContainer style={{width:'500px'}}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>#Id</TableCell>
+              <TableCell>Nombre</TableCell>
+              <TableCell>Usuario</TableCell>
+              <TableCell>Telefono</TableCell>
+              <TableCell>Opciones</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {data.map(usuarios=>(
+              <TableRow key={usuarios.id}>
+                <TableCell>{usuarios.id}</TableCell>
+                <TableCell>{usuarios.name}</TableCell>
+                <TableCell>{usuarios.username}</TableCell>
+                <TableCell>{usuarios.phone}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer> */}
+
+      // import React, {useEffect, useState} from 'react';
+// import './App.css';
+// import axios from 'axios'
+// // import {Modal, Button, TextField} from '@material-ui/core';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Editar from './components/Editar';
+
+// const url = "https://jsonplaceholder.typicode.com/users?limit=4";
+// function App() {
+
+//   const [data, setData]=useState([]);
+
+//   const Get=async()=>{
+//     await axios.get(url).then(response=>{
+//       setData(response.data);
+//     })
+//   }
+//   useEffect(async()=>{
+//     await Get();
+//   },[])
+//   return (
+//     <div className="App">
+//        <table className="table" style={{width:'800px', margin:'250px auto', border:'2px solid black', borderRadius:'50px'}}>
+//                 <thead className="table-dark">
+//                     <tr>
+//                     <th scope="col">#id</th>
+//                     <th scope="col">Nombre</th>
+//                     <th scope="col">Usuario</th>
+//                     <th scope="col">Telefono</th>
+//                     <th scope="col">Opciones</th>
+//                     </tr>
+//                 </thead>
+//                 <tbody>
+//                     {data.map(usuarios=>(
+//                     <tr key={usuarios.id}>
+//                     <th scope="row">{usuarios.id}</th>
+//                     <td>{usuarios.name}</td>
+//                     <td>{usuarios.username}</td>
+//                     <td>{usuarios.phone}</td>
+//                     <td><Editar/></td>
+//                     </tr>
+//                     ))}
+//                 </tbody>
+//             </table>
+//     </div>
+//   );
+// } 
+
+// export default App;
