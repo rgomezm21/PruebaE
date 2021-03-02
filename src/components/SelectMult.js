@@ -39,10 +39,12 @@ import MultiSelect from "react-multi-select-component";
 const SelectMult = () => {
   const options = [
     { label: "Bailar", value: "bailar" },
-    { label: "Leer", value: "leer" },
     { label: "Comer", value: "comer", disabled: true },
+    { label: "Leer", value: "leer" },
     { label: "Estudiar", value: "estudiar" },
     { label: "Pescar", value: "pescar" },
+    { label: "Correr", value: "correr" },
+    { label: "Viajar", value: "viajar" },
   ];
 
   const [selected, setSelected] = useState([]);
