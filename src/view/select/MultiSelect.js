@@ -65,6 +65,7 @@ function MultiSelect() {
 		email: '',
 		phone: '',
 		company: '',
+		hobbie: '',
 	});
 
 	const handleChange = (e) => {
@@ -92,6 +93,7 @@ function MultiSelect() {
 						name.email = datosEmpleado.email;
 						name.phone = datosEmpleado.phone;
 						name.company = datosEmpleado.company;
+						name.hobbie = datosEmpleado.hobbie;
 					}
 					setIsOpenSuccess(true);
 
@@ -172,6 +174,7 @@ function MultiSelect() {
 			<br />
 			<SelectMult
 			label="Hobbie"
+			name="hobbie"
 			onChange={handleChange}
 			value={datosEmpleado && datosEmpleado.hobbie}
 			/>

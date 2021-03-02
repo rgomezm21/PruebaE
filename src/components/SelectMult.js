@@ -38,15 +38,11 @@ import MultiSelect from "react-multi-select-component";
 
 const SelectMult = () => {
   const options = [
-    { label: "Grapes", value: "grapes" },
-    { label: "Mango", value: "mango" },
-    { label: "Strawberry", value: "strawberry", disabled: true },
-    { label: "Watermelon", value: "watermelon" },
-    { label: "Pear", value: "pear" },
-    { label: "Apple", value: "apple" },
-    { label: "Tangerine", value: "tangerine" },
-    { label: "Pineapple", value: "pineapple" },
-    { label: "Peach", value: "peach" },
+    { label: "Bailar", value: "bailar" },
+    { label: "Leer", value: "leer" },
+    { label: "Comer", value: "comer", disabled: true },
+    { label: "Estudiar", value: "estudiar" },
+    { label: "Pescar", value: "pescar" },
   ];
 
   const [selected, setSelected] = useState([]);
@@ -56,6 +52,7 @@ const SelectMult = () => {
       <h6>Hobbies</h6>
       {/* <pre>{JSON.stringify(selected)}</pre> */}
       <MultiSelect
+        name="hobbie"
         options={options}
         value={selected}
         onChange={setSelected}
