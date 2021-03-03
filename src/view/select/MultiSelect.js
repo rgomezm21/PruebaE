@@ -127,6 +127,10 @@ function MultiSelect() {
 		Get();
 	}, []);
 
+	const prueba = (data) => {
+		console.log("data", data)
+	}
+
 	const bodyEditar = (
 		<div className={styles.modal}>
 			<h3>Editar Usuario</h3>
@@ -176,6 +180,7 @@ function MultiSelect() {
 			label="Hobbie"
 			name="hobbie"
 			onChange={handleChange}
+			prueba={prueba}
 			value={datosEmpleado && datosEmpleado.hobbie}
 			/>
 			<br />
