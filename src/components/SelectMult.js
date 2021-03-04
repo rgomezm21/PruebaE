@@ -5,15 +5,15 @@ const options = [
   { value: "oficio", label: "oficio" },
   { value: "azul", label: "azul" },
   { value: "verde", label: "verde" },
-  { value: "blanco", label: "blanco" }
+  { value: "blanco", label: "blanco" },
 ];
 
 
 const SelectMult = ({prueba}) => {
   const [selectedOption, setselectedOption] = useState([])
 
-  const handleChange = selectedOption => {
-    setselectedOption({selectedOption})
+  const handleChange = data => {
+    setselectedOption(data)
     // this.setState({ selectedOption });
     // Option selected: { value: "rojo", label: "rojo" }
     // console.log("Option selected:", selectedOption);
@@ -30,8 +30,7 @@ const SelectMult = ({prueba}) => {
         isMulti
         name="hobbie"
         options={options}
-        value={selectedOption}
-        onChange={handleChange}
+        onChange={(e)=> handleChange(e)}
         closeMenuOnSelect={false}
       />
     </Fragment>

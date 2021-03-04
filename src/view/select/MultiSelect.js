@@ -128,7 +128,8 @@ function MultiSelect() {
 	}, []);
 
 	const prueba = (data) => {
-		console.log("data", data)
+		const hobbiesSelect = data;
+		console.log(data)
 	}
 
 	const bodyEditar = (
